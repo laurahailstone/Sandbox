@@ -1,14 +1,12 @@
-<H1>HTML Notes</H1>
+<H1><center>HTML Notes</center></H1>
 <H2>HTML (Hypertext Markup Language) a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages. </H2>
 <body>
-<H3>HTML Elements</H3>
+<H3 id="top-of-page">HTML Elements</H3>
 <!--this p tag has inline stylings-->
     <p style="color:blue;">
         An HTML element is an individual component of an HTML document 
         It's function is to represent the meaning/semantics of the content. Most HTML elements start and end with "tags" <> and  </>. 
         These tags surround and give meaning to the content. For example, this element is a paragraph. It is surrounded by p tags.</p>
-    </p>
-    <h4>Basic HTML Elements</h4>
     <p>Some tags give a descriptive structure to your HTML which makes it easier to read and
         help with Search Engine Optimization. Some examples include: 
         <ul>
@@ -48,7 +46,71 @@
         <b>Footer tag</b>=usually copyright, authorship, contact information, site map, and links back to the top.
 
     </p>
-    <h4>Images and Links</h4>
-    <h4>Web Forms</h4>
+    <h4 style="color:purple;" ><center>HTML Attributes</center></h4>
+    <p>
+        We can provide more information about HTML elements by assigning them attributes. All HTML elements can have attributes, and 
+        the attributes are always specified in the opening tag. For example, the h4 header of this secion has been assigned the
+        style attribute of "color:purple;. Here are some other attributes that can be specified:
+        <ul>
+            <li><b>href=</b> This defines the hyperlink.</li>
+            <li><b>src=</b> This is used to embed an image into the code. It specifis the path to the image to be displayed.</li>
+            <li><b>height=</b> and <b>width=</b>Used to define the dimensions (in pixels) of an image element.</li> 
+            <li><b>alt=</b> This defines defines the alternate text to an image element.</li>
+            <li><b>style=</b> This defines the color, font, size, and more.</li>
+            <li><b>id=</b> This specifies a unique ID for an html element.</li>
+        </ul>
+    </p>
+
+    <h3><center>Images and Links</center></h3>
+    <img src="https://cdn.educba.com/academy/wp-content/uploads/2018/09/Top-Uses-Of-HTML.jpg" alt="Cool HTML5 Website Image" width="400" height="250">
+    <p>You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.
+        Remember that the image element is self-closing, which means you don't need /img inside the carrots. Also, every image 
+        requires an alt attribute which populates the space with text in the event that the image does not load. Even if the image
+        is only for decorative purposes, the alt attribute is required but can be left blank. (ex. alt="")<br>
+        <br>
+        You can insert a link using text or an image. Here is an example of linking via text. By using an anchor element (a) along with
+        a hyperlink attribute (href), followed by the text you want to display in quotes. <a href="https://www.educba.com/uses-of-html/">See here</a>
+        The anchor element is not self-closing so the display text is followed by a closing anchor tag.
+        </br>
+        Now, to get really fancy, we can convert an image into a link by combining these two elements. Check it. </br>
+        <a href="https://www.educba.com/uses-of-html/"><img src="https://cdn.educba.com/academy/wp-content/uploads/2018/09/Top-Uses-Of-HTML.jpg" alt"Cool HTML5 Website" width="400" height="250"></a>
+    <!--Make note of the opening and closing <>'s in the image link. These get tricky-->    
+    </br>
+        What if we want a link to open a new page while keeping the current page up? Well that is done with a <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">target attribute.</a>
+        The value of the target attribute must be set to _blank.
+        </br>
+        </br>  
+        Let's suppose you need to direct a user to another part of your web page. This can easily be done be creating an internal link using an
+        anchor element + an href attribute + # symbol + value id. *Be sure to assign the value id to the destination as well.* </br>
+        Since this page of notes is getting pretty long, we may need to link to other parts for easier navigation. Let's go back to the 
+        <a href="#top-of-page">top of the page.</a>
+    </br>
+    Finally, let's suppose you want to create an anchor element with a link, but you don't have the destination to assign. You can use the # symbol inside of
+    the quotes as a placeholder until you get the correct url. This is called a <a href="#"> dead link</a> because it won't go anywhere, but at least the 
+    infrastructure will be in place. (Actually, it seems that the dead link just takes you to the top of the page.)
+    </p>
+    <h3><center>Web Forms</center></h3>
+    <p>
+        Sometimes, we need to gather information rather than distribute it. This requires some interactive elements, such as forms.
+        On order to use the data that is enetered into a webform, there needs to be specified actions and destinations for the data to go.
+        Here is a webform with some input elements with different type= attributes that are used to collect the data.
+        <form action="url-database-destination">
+        <b>Example of a Text Field Input-</b> <input type="text" placeholder="placeholder attribute"> <button type="submit">Submit Button</button></br>
+        </br>
+        Use a <b>Radio Button Input</b> for questions that require only one answer. For example:</br> 
+        </br>
+        <i>Please select your favorite input type</i></br>
+        <label for="Text Field">
+            <input id="Text Field" type="radio" name="Input Options">Text Field
+        </label>
+        <label for="Radio Button">
+            <input id="Radio Button" type="radio" name="Input Options">Radio Button
+        </label>
+        <label for="Checkbox">
+            <input id="Checkbox" type="radio" name="Input Options">Checkbox
+        </label>
+        <b>Checkbox Input</b>
+    </form>
+    </p>
 </body>
 
