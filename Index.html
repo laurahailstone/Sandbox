@@ -94,11 +94,13 @@
         Sometimes, we need to gather information rather than distribute it. This requires some interactive elements, such as forms.
         On order to use the data that is enetered into a webform, there needs to be specified actions and destinations for the data to go.
         Here is a webform with some input elements with different type= attributes that are used to collect the data.
+    </p>
         <form action="url-database-destination">
-        <b>Example of a Text Field Input-</b> <input type="text" placeholder="placeholder attribute"> <button type="submit">Submit Button</button></br>
+        <b>Text Field Input Element</b> </br> 
+        <i>Please enter an answer in text</i></br>
+        <input type="text" placeholder="placeholder attribute"> </br>
         </br>
-        Use a <b>Radio Button Input</b> for questions that require only one answer. For example:</br> 
-        </br>
+        <b>Radio Button Input Element</b> (for questions that require only one answer)</br> 
         <i>Please select your favorite input type</i></br>
         <label for="Text Field">
             <input id="Text Field" type="radio" name="Input Options">Text Field
@@ -108,9 +110,23 @@
         </label>
         <label for="Checkbox">
             <input id="Checkbox" type="radio" name="Input Options">Checkbox
+        </label></br>
+    </br>
+        <b>Checkbox Input Element</b> (for questions that can have multiple answers)</br>
+        <i>Please select all input types you intend to use for future webforms</i></br>
+        <label for="Text Field">
+            <input id="Text Field" type="checkbox" name="Input Use"> Text Field
         </label>
-        <b>Checkbox Input</b>
+        <label for="Radio Button">
+            <input id="Radio Button" type="checkbox" name="Input Use"> Radio Button
+        </label>
+        <label for="Checkbox">
+            <input id="Checkbox" type="checkbox" name="Input Use"> Checkbox
+        </label></br>
+    </br>
+        <b>Button Input Element</b></br>
+        <i>Please submit your responses to the destination that was specified in the form action above</i></br>
+        <button type="submit">Submit Button</button></br>
     </form>
-    </p>
 </body>
 
