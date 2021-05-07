@@ -1,7 +1,7 @@
 <H1><center>HTML Notes</center></H1>
 <H2>HTML (Hypertext Markup Language) a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages. </H2>
 <body>
-<H3 id="top-of-page">HTML Elements</H3>
+<H3 id="top-of-page"><center>HTML Elements</center></H3>
 <!--this p tag has inline stylings-->
     <p style="color:blue;">
         An HTML element is an individual component of an HTML document 
@@ -26,7 +26,14 @@
         There is even a tag which allows you to make comments without them displaying with the rest of your content.
         Look....<!--This comment is NOT visible--> See? No, you can't see it. <!--You can't see this comment--> ...but now you can. 
     </p>
-    <h4>HTML5 Elements</h4>
+    <h3><center>Structural Elements</center></h3>
+    <p>Some HTML elements are used purely for structural purposes.</p>
+        <ul>
+        <li><b>Div Element</b> - This element defines a section and contains other elements which can then be stylized by CSS or manipulated by JavaScript.</li><br> 
+        <li><b>!DOCTYPE... Element</b> - This element tells the browser which version of HTML is being used. Remember that the tag must be capitalized.</li><br>
+        <li><b>html Element</b>- This element wraps around all other html elements and acts as a container for the whole document.</li> <br>
+    </ul><br>
+    <h4><center>HTML5 Elements</center></h4>
     <p>HTML5 introduces more description HTML tags which makes it easier to read and
         help with Search Engine Optimization. Some examples include: 
         <ul>
@@ -43,9 +50,9 @@
         <b>Body tag</b> =all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.<br>
         <b>Main tag</b>=main content of the document. Should be unique to the document and not contain any content that is repeated
         across documents such as sidebars, navigation links, copyright information, site logos, and search forms.<br>
-        <b>Footer tag</b>=usually copyright, authorship, contact information, site map, and links back to the top.
-
-    </p>
+        <b>Footer tag</b>=usually copyright, authorship, contact information, site map, and links back to the top.<br>
+      
+    <br>
     <h4 style="color:purple;" ><center>HTML Attributes</center></h4>
     <p>
         We can provide more information about HTML elements by assigning them attributes. All HTML elements can have attributes, and 
@@ -59,7 +66,7 @@
             <li><b>style=</b> This defines the color, font, size, and more.</li>
             <li><b>id=</b> This specifies a unique ID for an html element.</li>
         </ul>
-    </p>
+    </p><br>
 
     <h3><center>Images and Links</center></h3>
     <img src="https://cdn.educba.com/academy/wp-content/uploads/2018/09/Top-Uses-Of-HTML.jpg" alt="Cool HTML5 Website Image" width="400" height="250">
@@ -103,30 +110,48 @@
         <b>Radio Button Input Element</b> (for questions that require only one answer)</br> 
         <i>Please select your favorite input type</i></br>
         <label for="Text Field">
-            <input id="Text Field" type="radio" name="Input Options">Text Field
+            <input id="Text Field" value="Text Field" type="radio" name="Input Options">Text Field
         </label>
         <label for="Radio Button">
-            <input id="Radio Button" type="radio" name="Input Options">Radio Button
+            <input id="Radio Button" value="Radio Button" type="radio" name="Input Options" checked>Radio Button
         </label>
         <label for="Checkbox">
-            <input id="Checkbox" type="radio" name="Input Options">Checkbox
+            <input id="Checkbox" value="Checkbox" type="radio" name="Input Options">Checkbox
         </label></br>
+        (Notice how the radio button option is checked by default?)</br>
     </br>
         <b>Checkbox Input Element</b> (for questions that can have multiple answers)</br>
         <i>Please select all input types you intend to use for future webforms</i></br>
-        <label for="Text Field">
-            <input id="Text Field" type="checkbox" name="Input Use"> Text Field
+        <label for="Text Field"></label>
+            <input id="Text Field" value="Text Field" type="checkbox" name="Input Use"> Text Field
         </label>
         <label for="Radio Button">
-            <input id="Radio Button" type="checkbox" name="Input Use"> Radio Button
+            <input id="Radio Button" value="Radio Button" type="checkbox" name="Input Use"> Radio Button
         </label>
         <label for="Checkbox">
-            <input id="Checkbox" type="checkbox" name="Input Use"> Checkbox
+            <input id="Checkbox" value="Checkbox" type="checkbox" name="Input Use"  checked> Checkbox
         </label></br>
+        (Notice how the checkbox option has a checked attribute and is the default answer?)</br>
     </br>
         <b>Button Input Element</b></br>
         <i>Please submit your responses to the destination that was specified in the form action above</i></br>
         <button type="submit">Submit Button</button></br>
     </form>
+</br>
+<h4><center>Value Attribute and Data Collection</center></h4>
+<p>
+    When a form is submitted, the data is sent to a server and includes the entries
+    for the options selected. For radio and checkbox input types, the data 
+    that is reported comes from the value attribute.</br>
+</br>
+    Let's suppose that a user completes the form above, and selects "Radio Button"
+    as their favorite input type. Because there is a value attribute assigned
+    to the input element, the data "Radio Button" will be reported. If the 
+    value attribute is missing, then a default value of "on" will be reported,
+    but it is not useful information.</br>
+</br>
+<u>If you have a webform with radio buttons or checkboxes, ALWAYS REMEMBER TO 
+    INCLUDE VALUE ATTRIBUTES!</u>
+</p>
 </body>
 
